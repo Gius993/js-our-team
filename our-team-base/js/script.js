@@ -7,34 +7,34 @@
 
 const arrayCard = [
 	{
-		foto : 'wayne-barnett-founder-ceo.jpg',
+		foto : 'img/wayne-barnett-founder-ceo.jpg',
 		name : 'Wayne Barnett',
 		title : 'Founder & CEO'
 	},
 	{
-		foto : 'angela-caroll-chief-editor.jpg',
+		foto : 'img/angela-caroll-chief-editor.jpg',
 		name : 'Angela Caroll',
 		title : 'Chief editor'
 	},
 	{
-		foto : 'walter-gordon-office-manager.jpg',
-		name : 'Wayne Barnett',
-		title : 'Founder & CEO'
+		foto : 'img/walter-gordon-office-manager.jpg',
+		name : 'Walter Gordon',
+		title : 'Office Manager'
 	},
 	{
-		foto : 'wayne-barnett-founder-ceo.jpg',
-		name : 'Wayne Barnett',
-		title : 'Founder & CEO'
+		foto : 'img/angela-lopez-social-media-manager.jpg',
+		name : 'Angela Lopez',
+		title : 'Social Media Manager'
 	},
 	{
-		foto : 'wayne-barnett-founder-ceo.jpg',
-		name : 'Wayne Barnett',
-		title : 'Founder & CEO'
+		foto : 'img/scott-estrada-developer.jpg',
+		name : 'Scott Estrada',
+		title : 'Developer'
 	},
 	{
-		foto : 'wayne-barnett-founder-ceo.jpg',
-		name : 'Wayne Barnett',
-		title : 'Founder & CEO'
+		foto : 'img/barbara-ramos-graphic-designer.jpg',
+		name : 'Barbara Ramos',
+		title : 'Graphic Designer'
 	},
 ];
 
@@ -53,7 +53,8 @@ for(let i = 0; i < arrayCard.length; i++) {
 		<div class="team-card">
 			<div class="card-image">
 		 		 <img
-				  ${cardStamp.foto}
+				  src=" ${cardStamp.foto}"
+				  alt="foto"
 	 			 />
 		</div>
 		<div class="card-text">
@@ -61,6 +62,7 @@ for(let i = 0; i < arrayCard.length; i++) {
 	 		 <p>${cardStamp.title}</p>
 		</div>
 		</div>`;
+		console.log(cardTeam);
 		//stampa
 		memberContainer.innerHTML += cardTeam;
 }
